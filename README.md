@@ -4,23 +4,23 @@ A production-ready microservice that wraps LLM calls with comprehensive guardrai
 
 ## Features
 
-### 🛡️ Guardrails & Safety
+### Guardrails & Safety
 - **Prompt Injection Detection**: Detect and prevent prompt injection and jailbreak attempts
 - **PII Redaction**: Automatically detect and redact personally identifiable information
 - **Content Policy Checking**: Enforce content policies and safety guidelines
 - **Model Cards**: Manage and track model metadata, capabilities, and limitations
 
-### ⚡ Performance & Reliability
+### Performance & Reliability
 - **Rate Limiting**: Redis-based rate limiting with per-minute and per-hour limits
 - **Retry Logic**: Exponential backoff for resilient API calls
 - **Health Checks**: Comprehensive health monitoring endpoints
 
-### 📊 Observability
+### Observability
 - **OpenTelemetry**: Full instrumentation for traces, metrics, and logs
 - **Distributed Tracing**: Track requests across service boundaries
 - **Metrics Export**: Prometheus-compatible metrics
 
-### 🤖 Agents & Orchestration
+### Agents & Orchestration
 - **LangGraph Integration**: Orchestrate tool-using agents with retrieval, reasoning, and action nodes
 - **Mem0 Memory**: Long-term memory management for conversational agents
 - **Vector Database Backends**: Pluggable backends (FAISS, pgvector, Qdrant) for retrieval
