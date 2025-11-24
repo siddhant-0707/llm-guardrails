@@ -1,0 +1,70 @@
+# Core Framework
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings
+
+# Redis & Caching
+redis
+hiredis
+
+# Observability
+opentelemetry-api
+opentelemetry-sdk
+opentelemetry-instrumentation-fastapi
+opentelemetry-instrumentation-redis
+opentelemetry-exporter-otlp
+opentelemetry-exporter-prometheus
+
+# LLM & Agents
+langchain
+langchain-core
+langgraph
+langchain-google-genai
+langchain-google-vertexai
+google-genai
+# langchain-openai  # Optional: Uncomment if using OpenAI
+# openai  # Optional: Uncomment if using OpenAI
+# mem0ai>=0.1.118  # Optional: Uncomment if using Mem0 memory
+
+# Vector Databases
+pgvector
+psycopg2-binary
+faiss-cpu  # Note: Python 3.12 not supported by v1.7.4 wheels
+# Install separately if needed: pip install faiss-cpu (may require Python <3.12 or build from source)
+# Alternative: Use pgvector or qdrant for Python 3.12 compatibility (recommended)
+qdrant-client
+
+# ML & Model Management
+mlflow
+torch
+transformers
+peft
+onnx
+onnxruntime
+
+# PII Detection & NLP
+spacy
+presidio-analyzer
+presidio-anonymizer
+
+# Utilities
+httpx
+tenacity
+python-jose[cryptography]
+python-multipart
+python-dotenv
+
+# Testing
+pytest
+pytest-asyncio
+pytest-cov
+pytest-mock
+faker
+
+# Development
+black
+ruff
+mypy
+pre-commit
+
